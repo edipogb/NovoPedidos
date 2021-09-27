@@ -1,0 +1,26 @@
+{% extends 'main.html'%}
+{% block content%}
+{%endblock%}
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">CODIGO</th>
+        <th scope="col">VENDEDOR</th>
+        <th scope="col">CODIGOGERENTE</th>
+        <th scope="col">GERENTE</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      {% for rows in values%}
+
+        <tr>
+          <td scope="col">{{rows.CODIGO}}</td>
+          <td scope="col">{{rows.VENDEDOR}}</td>
+          <td scope="col">{{rows.CODIGOGERENTE}}</td>
+          <td scope="col">{{rows.GERENTE}}</td>
+        </tr>
+
+      {% endfor %}
+    </tbody>
+  </table>
